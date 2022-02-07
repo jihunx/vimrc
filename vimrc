@@ -7,7 +7,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'airblade/vim-gitgutter' " vim with git status(added, modified, and removed lines)
+Plugin 'airblade/vim-gitgutter'                                                 " vim with git status(added, modified, and removed lines)
 Plugin 'tpope/vim-fugitive' " vim with git command(e.g., Gdiff)
 Plugin 'vim-airline/vim-airline' " vim status bar
 Plugin 'vim-airline/vim-airline-themes'
@@ -52,10 +52,10 @@ set ignorecase										" 검색시 대소문자 무시, set ic도 가능
 set hlsearch										" 검색어 강조, set hls도 가능
 set cursorline										" 편집 위치에 커서 라인 표시
 set incsearch						  				" 키워드 입력시 점진적 검색
-set wmnu											" tab을 눌렀을 때 자동 완성 목록 표시
-filetype indent on									" 파일 종류에 따른 구문강조
+set wmnu											                    " tab을 눌렀을 때 자동 완성 목록 표시
+filetype indent on						              			" 파일 종류에 따른 구문강조
 highlight Comment term=bold cterm=bold ctermfg=4	" 코멘트 하이라이트
-" set nowrapscan									" 검색할 때 문서의 끝에서 처음으로 안 돌아감
+" set nowrapscan								                	" 검색할 때 문서의 끝에서 처음으로 안 돌아감
 " set background=dark								" 하이라이팅 light / dark
 " set nobackup										" 백업 파일을 안 만듦
 " set nocompatible									" 오리지날 VI와 호환하지 않음
