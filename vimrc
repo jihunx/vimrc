@@ -34,9 +34,6 @@ let g:indent_guides_guide_size=1
 let g:airline#extensions#tabline#enabled = 1 		" turn on buffer list
 let g:airline_theme='hybrid'
 set laststatus=2 									" turn on bottom bar
-let mapleader = ","
-nnoremap <leader>q :bp<CR>							" leader + q 클릭하여 이전 탭으로 이동
-nnoremap <leader>w :bn<CR>
 
 " for blueyed/vim-diminactive
 let g:diminactive_enable_focus = 1
@@ -76,6 +73,11 @@ filetype plugin indent on							" 파일 종류에 따른 구문강조
 " Shortcuts
 nmap <F5> :NERDTreeToggle<cr>						" for NERDTree
 nmap <F8> :Tagbar<CR>								" for taglist
+let mapleader = ","									" for vim-airline
+nnoremap <leader>q :bp<CR>							" for vim-airline: leader + q 이전 탭으로 이동
+nnoremap <leader>w :bn<CR> 							" for vim-airline: leader + w 다음 탭으로 이동
+autocmd FileType python map <buffer> <C-R> :w<CR>:!clear; python %<CR>
+autocmd FileType python imap <buffer> <C-R> <esc>:w<CR>:!clear; python %<CR>
 
 " 마지막으로 수정된 곳에 커서를 위치함
 au BufReadPost *
